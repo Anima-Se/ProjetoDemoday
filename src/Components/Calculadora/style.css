@@ -1,0 +1,20 @@
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 5px;
+}
+
+input[type="radio"]:checked {
+    background-color: #F5620E;
+}
+
+#inpNumber {
+    border: solid #F5620E 1px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 0.75rem;
+    background-color: #f0f0f0;
+    outline: none;
+}

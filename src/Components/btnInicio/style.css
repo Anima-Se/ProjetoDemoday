@@ -1,0 +1,38 @@
+#btnComecar {
+    background-color: transparent;
+    margin-top: 20px;
+    border: 2px solid #F5620E;
+    border-radius: 10px;
+    width: 150px;
+    transition: 0.5s;
+}
+
+#btnComecar:hover {
+    color: #F1F1F1;
+    background-color: #F5620E;
+}
+
+#btnCard{
+    background-color: #F5620E;
+    color: #F1F1F1;
+    border-radius: 10px;
+    height: 30px;
+    width: 90px;
+}
+
+#btnAprender{
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 15px;
+    width: 140px;
+    margin-top: 260px;
+    margin-left: 50px;
+    height: 35px;
+}
+
+#btnAprender:hover {
+    color: #F5620E;
+    background-color: #F1F1F1;
+}

@@ -1,0 +1,20 @@
+.cbInput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cbInput input{
+    width: 4vw;
+    height: 3vh;
+    display: flex;
+    margin-top: 7px;
+    border: 1px solid orangered;
+
+}
+
+.cbInput p{
+    color: black;
+    font-size: 18px;
+    padding-top: 9px ;
+}

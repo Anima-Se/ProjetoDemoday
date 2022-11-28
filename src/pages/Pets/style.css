@@ -1,0 +1,33 @@
+.mainPet {
+    height: 100%;
+    background: url('../../img/background-conhecer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding-top: 12rem;
+
+}
+
+
+.petsbox {
+    height: 1102px;
+    width: 100vw;
+    background-color: transparent
+}
+
+/* .cima {} */
+
+.baixo {
+    height: 997px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}

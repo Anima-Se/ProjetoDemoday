@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+.conhecer {
+    background: url('../../img/background-conhecer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#tela-adotar{
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.51);
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+#tela-adotar h4{
+    color: #C26916;
+    text-align: center;
+}
+
+#check {
+    float: right;
+    left: -40px;
+    bottom: 10px;
+    position: relative;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.check{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.tela-conteudo{
+    background: #F0F0F0;
+    width: 580px;
+    height: 330px;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.tela-info {
+    padding: 0;
+    margin-top: 40px;
+
+}
+
+.tela-info li{
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.tela-info li a{
+    text-decoration: none;
+    color: rgb(15, 186, 253);
+
+}
+
+.tela-info li span{
+    font-weight: 600;
+}
+
+#laika {
+    float: left;
+    height: 490px;
+    margin-left: 8%;
+    margin-top: 12%;
+}
+
+.conteudo {
+    margin-left: 25px;
+    padding-top: 11%;
+    float: left;
+    width: 50%;
+}
+
+.nome {
+    font-size: 64px;
+    color: #F5620E;
+    font-family: 'Itim', cursive;
+}
+
+.sobre {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.mais-informacoes {
+    font-size: 32px;
+    margin-top: 10px;
+    color: #F5620E;
+    font-family: 'Itim', cursive;
+}
+
+.conhecer-informacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.conhecer-informacoes ul {
+    list-style-type: none;
+}
+
+.conhecer-informacoes ul li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.info1{
+    padding-left: 0;
+}
+
+.info2{
+    padding-left: 15px;
+    border-left: 2px solid #000;
+}
+
+.info2 img{
+    margin-right: 5px;
+}
+
+#conhecer-text {
+    margin-top: 36px;
+    font-size: 16px;
+}
+
+.botao-conhecer{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+#botaoAdotar{
+    background-color: #F5620E;
+    margin-top: 20px;
+    border:none;
+    border-radius: 10px;
+    height: 40px;
+    width: 250px;
+    transition: ease 0.5s all;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+}
+
+#botaoAdotar:hover{
+    transition: ease 0.5s all;
+    color: #F1F1F1;
+    background-color: #f7b28a96;
+    border: 1px solid #F5620E;
+}

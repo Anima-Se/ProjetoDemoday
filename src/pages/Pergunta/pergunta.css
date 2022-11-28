@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.divpai{
+    background-color: #D8D1C7;
+}
+
+/* ----- */
+
+.fundo{
+    z-index: 1;
+}
+.elipse1{
+    position: absolute;
+    left: 0px;
+    top: -10rem;
+}
+.elipse2{
+    position: absolute;
+    right: 0;
+    bottom: 0;;
+}
+.patas{
+    position: absolute;
+    background-color: transparent;
+    width: 200px;
+    left: 10px;
+    bottom: 10px;
+}
+
+/* ---- */
+
+.escolha{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.escolha .adotar{
+    background-color: #F0F0F0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 40px;
+    color:#F5620E;
+    font-family: 'Itim';
+
+    position: absolute;
+    left: 264px;
+    top: 150px;
+
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+.escolha h5{
+    font-size: 40px;
+    color:#F5620E;
+    font-family: 'Itim';
+}
+.escolha .doar{
+    background-color: #F0F0F0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 40px;
+    color:#F5620E;
+    font-family: 'Itim';
+
+    position: absolute;
+    right: 264px;
+    bottom: 150px;
+
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}

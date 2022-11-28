@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: 'Poppins';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* navbar */
+
+.logo{
+  height: 60px;
+
+}
+
+#divlogo{
+  margin-left: -90px;
+}
+
+.iconelogin{
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.nav{
+  background-color:transparent !important;
+}
+
+.nav .aaa{
+  justify-content: space-around !important;
+}
+
+.opcoes{
+  font-family: 'Itim', cursive;
+}
+
+/* home */
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+#header{
+    height: 100vh;
+}
+
+.introducao{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.frase{
+    padding: 80px 90px;
+    font-family: 'Itim', cursive;
+}
+
+.frase #titulo{
+    color: #F5620E;
+}
+
+.frase span{
+    display: block;
+    color: #589F7D;
+}
+
+.frase #btnComecar{
+    margin-top: 20px;
+}
+
+#cachorro{
+    height: 580px;
+    margin-left: 300px;
+}
+
+#gato{
+    margin-top: -330px;
+    height: 250px;
+}

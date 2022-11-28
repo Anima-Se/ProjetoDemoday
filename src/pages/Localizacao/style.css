@@ -1,0 +1,83 @@
+.localizacao {
+    background: url('../../img/background-conhecer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.divLocalizacao {
+    height: 70vh;
+    width: 90vw;
+    margin-top: 2rem;
+    margin-left: 4.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.mapa {
+    height: 100%;
+    width: 50%;
+
+}
+
+.map {
+    flex: 1 1 45rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.opcaoMapa {
+    background-color: rgb(0, 96, 75);
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.opcaoMapa h2 {
+    color: white;
+    font-size: 26px;
+    padding-top: 6px;
+
+}
+
+.opcaoMapa img {
+    max-width: 70%;
+    display: block;
+}
+
+.opcaoMapa p {
+    color: white;
+    font-size: 20px;
+}
+
+.rd {
+    width: 20px;
+    padding-right: 20px;
+}
+
+
+.imgMapa {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    float: left;
+    flex-direction: row;
+}
+
+.opcao {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.divMap {
+    display: flex;
+    flex-direction: row;
+}

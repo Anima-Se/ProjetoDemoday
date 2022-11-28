@@ -1,0 +1,404 @@
+body{
+    background-color: #D8D1C7;
+}
+
+.home1{
+height: 100vh;
+font-family: 'Itim', cursive;
+}
+
+.row{
+height: 88vh;
+}
+
+.esquerdo{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.direito{
+display: flex;
+flex-direction: row;
+background-color: transparent;
+}
+
+#slogan{
+color: #F5620E;
+
+}
+
+#slogan span{
+color: #589F7D;
+}
+
+
+
+#gato{
+height: 215px;
+width: 330px;
+position: absolute;
+left: 0;
+bottom: 0;
+}
+
+#cachorro{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 580px;
+    background-color: transparent;
+}
+
+.informacoes{
+margin-top: 78px;
+}
+
+/* Home parte 2 */
+
+.home2{
+height: 125vh;
+}
+
+.banner{
+background-image: linear-gradient(rgba(0,0,0, 0.137), rgba(0, 0, 0, 0.137)), url(../../img/fundo.png);
+margin-top: 3px;
+height: 350px;
+width: 98.6vw;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+#slogan2{
+background-color: transparent;
+font-family: 'Poppins', sans-serif;
+font-size: 42px;
+position: absolute;
+color: #D8D1C7;
+top: 110px;
+left: 180px;
+}
+
+#onda{
+position: absolute;
+bottom: 0px;
+background-color: transparent;
+}
+
+.sobreNos{
+display: flex;
+justify-content: center;
+}
+
+.esquerdo2{
+height: 480px;
+width: 50vw;
+font-family: 'Poppins', sans-serif;
+position: relative;
+}
+
+.esquerdo2 p{
+font-size: 19px;
+color: #010101;
+position: absolute;
+top: 150px;
+left: 32px;
+font-weight: bold;
+}
+
+.esquerdo2 h2{
+font-size: 36px;
+color: #010101;
+position: absolute;
+top: 65px;
+left: 32px;
+font-weight: bold;
+}
+
+.direito2{
+height: 480px;
+width: 50vw;
+position: relative;
+}
+
+#bola{
+height: 430px;
+position: relative;
+left: 85px;
+top: 25px;
+background-color: transparent;
+}
+
+#cachorro2{
+height: 250px;
+position: absolute;
+top: 210px;
+left: 330px;
+border-radius: 10px;
+transform: translateY(0px);
+animation: float 3s ease-in-out infinite;
+}
+
+#cachorro3{
+height: 250px;
+position: absolute;
+top: 108px;
+left: 110px;
+border-radius: 10px;
+transform: translateY(0px);
+animation: float 2s ease-in-out infinite;
+}
+
+#gato2{
+height: 180px;
+position: absolute;
+left: 330px;
+top: 15px;
+border-radius: 10px;
+transform: translateY(0px);
+animation: float 3s ease-in-out infinite;
+}
+
+/* Home parte 3 */
+
+
+/* Linha1 */
+
+.linha1{
+    display: flex;
+    flex-direction: row;
+    background-color: #B097D9;
+    height: 350px;
+    width: 98.7vw;
+}
+
+.esquerdo3{
+    height: 350px;
+    width: 49.35vw;
+}
+
+.direito3{
+    height: 350px;
+    width: 49.35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#gato3{
+    height: 350px;
+    width: 46.35vw;
+}
+
+.direito3 h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.direito3 p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Linha2 */
+
+.linha2{
+    display: flex;
+    flex-direction: row;
+    background-color: #589F7D;
+    height: 350px;
+    width: 98.7vw;
+}
+
+.esquerdo4{
+    height: 350px;
+    width: 49.35vw;
+}
+
+.esquerdo4{
+    padding-left: 15px;
+    height: 350px;
+    width: 49.35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.esquerdo4 h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.esquerdo4 p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#tartaruga{
+    height: 350px;
+    width: 49.35vw;
+}
+
+/* Linha3 */
+
+.linha3{
+    display: flex;
+    flex-direction: row;
+    background-color: #B097D9;
+    height: 350px;
+    width: 98.7vw;
+}
+
+.esquerdo5{
+    height: 350px;
+    width: 49.35vw;
+}
+
+.direito5{
+    height: 350px;
+    width: 49.35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.direito5 h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.direito5 p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#cachorro4{
+    height: 350px;
+    width: 46.35vw;
+}
+
+
+/* Linha4 */
+
+.linha4{
+    display: flex;
+    flex-direction: row;
+    background-color: #589F7D;
+    height: 350px;
+    width: 98.7vw;
+}
+
+.esquerdo6{
+    height: 350px;
+    width: 49.35vw;
+}
+
+.esquerdo6{
+    padding-left: 15px;
+    height: 350px;
+    width: 49.35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.esquerdo6 h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.esquerdo6 p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#hamster{
+    height: 350px;
+    width: 49.35vw;
+}
+
+.linhabtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+}
+
+
+/* CardHome */
+
+.cardHome{
+    height: 50vh;
+    width: 98.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.missao{
+    height: 25vh;
+    width: 600px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    padding: 10px 10px;
+}
+
+.missao h2{
+    font-family: 'Poppins', sans-serif;
+    color: #F5620E;
+    text-align: center;
+}
+
+.missao p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+
+
+/* Animação imagens flutuando */
+
+@keyframes float{
+0%{
+    transform: translateY(0px);
+}
+50%{
+    transform: translateY(-20px);
+}
+100%{
+    transform: translateY(0px);
+}
+}
+
+
+
+/* Responsividade */
+
+@media (max-width: 916px){
+
+/* Texto home parte 2 */
+
+#slogan2{
+    font-size: 30px;
+    left: 90px;
+}
+
+}
+

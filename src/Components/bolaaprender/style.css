@@ -1,0 +1,30 @@
+#bolalaranja{
+    height: 62vh;
+    width: 46vw;
+    padding-top: 40px;
+}
+
+#bolalaranja img{
+    height: 378px;
+    position: absolute;
+    
+}
+
+#bolalaranja h2{
+    position: absolute;
+    padding-top: 120px;
+    padding-left: 45px;
+    color: #F1F1F1;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#bolalaranja p{
+    position: absolute;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 50px;
+    padding-top: 190px
+    
+}
+

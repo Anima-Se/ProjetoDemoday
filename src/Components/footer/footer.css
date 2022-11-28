@@ -1,0 +1,78 @@
+.footer{
+    height: 300px;
+    width: 100vw;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid gray;
+}
+
+.esquerdo7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    width: 58.34vw;
+    padding-left: 70px;
+    padding-top: 90px;
+}
+
+.esquerdo7 p{
+    font-weight: 600;
+}
+
+.direito7{
+    height: 250px;
+    width: 41.34vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.paginas{
+    display: flex;
+    flex-direction: column;
+    width: 24.64vw;
+    justify-content: flex-end;
+    padding-bottom: 18px;
+    color: black;
+    align-items: start;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-left: 2px solid black;
+    height: 190px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    width: 24.64vw;
+    justify-content: flex-end;
+    padding-bottom: 35px;
+    color: #F5620E;
+    align-items: start;
+    padding-left: 20px;
+    border-left: 2px solid black;
+    height: 190px;
+}
+
+#face{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 29px;
+}
+
+#insta{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 29px;
+}
+
+#twitter{
+    height: 30px;
+    width: 30px;
+}

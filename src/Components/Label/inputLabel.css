@@ -1,0 +1,10 @@
+.labelCadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+.labelCadastro label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #F5620E;
+}

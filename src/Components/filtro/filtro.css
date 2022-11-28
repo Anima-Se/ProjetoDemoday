@@ -1,0 +1,61 @@
+.filtro {
+    width: 20vw;
+    background-color: rgb(237, 237, 237);
+    border-radius: 20px;
+}
+
+.filtrar {
+    height: 10vh;
+    width: 20vw;
+    padding: 0 10px;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+}
+
+h2 {
+    font-size: 20px;
+    color: black;
+
+}
+
+.nomeFiltro {
+    width: 20vw;
+    padding: 0 10px;
+    align-items: center;
+    color: rgb(255, 0, 0);
+    border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    display: block;
+    justify-content: space-between;
+    padding-top: 7px;
+}
+
+
+.nomeFiltro #preco {
+    font-size: 14px;
+}
+
+.titulo {
+    width: 20vw;
+    padding: 0 10px;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 20px 20px 0 0;
+    display: block;
+    justify-content: space-between;
+    padding-top: 17px;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    display: block;
+    justify-content: space-between;
+    padding-top: 7px;
+    
+}
+
+.titulo p {
+    color: black;
+}

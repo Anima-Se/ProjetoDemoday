@@ -1,0 +1,21 @@
+.iconesAprendizagem{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconesAprendizagem img{
+    height: 5vh;
+
+}
+
+.iconesAprendizagem p{
+    font-family: 'Popins', sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-top: 22px;
+    font-size: 16px;
+}
