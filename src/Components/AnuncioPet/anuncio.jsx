@@ -1,11 +1,11 @@
-
 import React from "react";
 import "./anuncio.css";
+import Impulso from '../../img/iconeseta.png';
 import BtnComecar from '../../Components/btnInicio/btnInicio';
 import { Link } from "react-router-dom";
 
 
-function AnuncioPet({ imgPets, nomePet, sexo, idade, doador }) {
+function AnuncioPet({ imgPets, nomePet }) {
 
     return (
         <>
@@ -15,11 +15,7 @@ function AnuncioPet({ imgPets, nomePet, sexo, idade, doador }) {
                 </div>
                 <div className="direito8">
                     <h2>{nomePet}</h2>
-                    <ul>
-                        <li>{sexo}</li>
-                        <li>Idade: {idade}</li>
-                        <li>doador: {doador}</li>
-                    </ul>
+                    <p>aaaa</p>
                     <div id="butao">
                         <Link to={"/Conhecer"}>
                             <BtnComecar txtBtn="Conhecer" />
@@ -34,13 +30,3 @@ function AnuncioPet({ imgPets, nomePet, sexo, idade, doador }) {
 }
 
 export default AnuncioPet;
-
-// const Lista = (({ sexo, idade, doador }) => {
-
-//     <ul>
-//         <li>{sexo}</li>
-//         <li>Idade: {idade}</li>
-//         <li>doador: {doador}</li>
-//     </ul>
-
-// })

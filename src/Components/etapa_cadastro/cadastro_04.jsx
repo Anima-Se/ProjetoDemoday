@@ -1,8 +1,9 @@
 import React from 'react';
 import InputCad from '../Input';
 import imgDog from '../../img/dog_cadastro.png';
+import imgBtn from '../../img/seta.png';
 
-function Cadastro_04() {
+function Cadastro_04({trocar }) {
     return (
         <>
   
@@ -24,6 +25,11 @@ function Cadastro_04() {
            
             </form>
         </div>
+
+        <div className='divImg'>
+                <img className='imgNext' src={imgBtn} alt="botao proximo" onClick={trocar} />
+
+            </div>
     </>
     )
 }

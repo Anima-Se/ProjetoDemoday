@@ -1,5 +1,8 @@
 package animase.demoday.projeto_animase.modelo;
 
+
+import java.sql.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,5 +25,14 @@ public class CadUsuarioModelo {
     private Long id_usuario;
     private String nome;
     private String email;
+    private String senha;
+    private String telefone;
+    private String cpf;
+    private Date data_nascimento;
+    private String cep;
+    private String endereco;
+    private String num_logradouro;
+    private String complemento;
+
 
 }

@@ -1,20 +1,28 @@
-input[type="radio"] {
-    -webkit-appearance: none;
-    width: 5px;
-    height: 5px;
+.calc {
+    background-color: crimson;
+    width: 50%;
+    height: 60%;
+    border-radius: 4%;
 }
 
-input[type="radio"]:checked {
-    background-color: #F5620E;
+.tituloCalc{
+
+    height: 15%;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 
-#inpNumber {
-    border: solid #F5620E 1px;
-    border-radius: 10px;
-    width: 100px;
-    height: 40px;
-    padding: 10px;
-    margin-bottom: 0.75rem;
-    background-color: #f0f0f0;
-    outline: none;
+.tituloCalc img{
+    width: 17%;
+    height: 90%;
+    margin-left: 2rem;
+}
+
+.tituloCalc h2{
+    font-size: 32px;
+    font-weight: 400;
+    padding-left: 3rem;
 }

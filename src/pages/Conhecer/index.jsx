@@ -8,9 +8,8 @@ import { Link } from "react-router-dom";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import AbrirDiv from '../../Components/openDiv/abrirDiv';
 import FecharDiv from '../../Components/openDiv/fecharDiv';
-import Map from '../../img/map.png';
-import User from '../../img/user.png';
-
+import Map from '../../img/map.png'; 
+import User from '../../img/user.png'; 
 
 function Conhecer() {
     return (
@@ -37,7 +36,6 @@ function Conhecer() {
 
                         </div>
                     </div>
-                   
 
                     <img src={laika} alt="Foto de um cachorro" id="laika" />
 

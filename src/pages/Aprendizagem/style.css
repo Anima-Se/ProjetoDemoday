@@ -1,54 +1,19 @@
 .aprender{
-    height: 390vh;
-    width: 98.7vw;
+    height: 90vh;
+    width: 100vw;
     padding-top: 9rem;
     display: flex;
-    flex-direction: column;
-}
-
-.topo{
-    display: flex;
-    height: 70vh;
-    width: 98.5vw;
+    flex-direction: row;
 }
 
 .lado1{
-    height: 67vh;
+    height: 58vh;
     width: 50vw;
+    border: 3px solid red;
 }
 
 .lado2{
-    height: 67vh;
+    height: 58vh;
     width: 50vw;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.lado2 img{
-    height: 67vh;
-}
-
-.iconsAprender{
-    height: 8vh;
-    display: flex;
-    flex-direction: row;
-}
-
-.cardsAprender{
-    height: 285vh;
-    padding-top: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.quebra{
-    flex-basis: 100%;
-    height: 7vh;
-}
-
-#aaa{
-    height: 40vh;
-
+    border: 3px solid blue;
 }

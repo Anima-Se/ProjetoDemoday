@@ -25,7 +25,7 @@ public class CadServico {
     }
 
     // Metodo para cadastrar
-    public ResponseEntity<?> Cadastrar(CadUsuarioModelo cum) {
+    public ResponseEntity<?> CadastrarAlterar(CadUsuarioModelo cum , String acao) {
 
         // validando o produto para ver se esta realmente OK
         if (cum.getNome().equals("")) {
@@ -38,16 +38,35 @@ public class CadServico {
             return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
 
         } else {
+            if(acao.equals("cadastrar")){
 
-            return new ResponseEntity<CadUsuarioModelo>(rp.save(cum) , HttpStatus.CREATED);
+                return new ResponseEntity<CadUsuarioModelo>(rp.save(cum) , HttpStatus.CREATED);
+            }
+            else{
+                return new ResponseEntity<CadUsuarioModelo>(rp.save(cum), HttpStatus.OK);
+            }
         }
     }
 
+    /*
+     *     public ResponseEntity<RespostaModelo> remover(long codigo){
+
+        pr.deleteById(codigo);
+
+        rm.setMensagem("O produto foi removido com sucesso!");
+        return new ResponseEntity<RespostaModelo>(rm, HttpStatus.OK);
+
+    }
+     */
+    public ResponseEntity<RespostaModelo> remover(long id_aluno){
+        rp.deleteById(id_aluno);
+
+        rm.setMensagem("O produto foi removido com sucesso");       
+        return new ResponseEntity<RespostaModelo>(rm , HttpStatus.OK); 
+    }
+
+
+
+
 }
 
-/*
- * else if (cum.getDescricao().equals("")) {
- * rm.setMensagem("Digite uma descricao!");
- * return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
- * }
- */

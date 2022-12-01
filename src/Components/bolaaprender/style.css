@@ -1,13 +1,11 @@
 #bolalaranja{
-    height: 62vh;
-    width: 46vw;
-    padding-top: 40px;
+    height: 58vh;
+    width: 38vw;
 }
 
 #bolalaranja img{
-    height: 378px;
+    height: 370px;
     position: absolute;
-    
 }
 
 #bolalaranja h2{
@@ -22,9 +20,7 @@
 #bolalaranja p{
     position: absolute;
     color: black;
-    font-family: 'Poppins', sans-serif;
     padding-left: 50px;
     padding-top: 190px
-    
 }
 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import '../../Components/bolaaprender/style.css';
 import Bolaimg from '../../img/bolaaprender.png';

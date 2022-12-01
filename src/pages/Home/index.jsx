@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './home.css';
 import Cachorro from '../../img/cachorro.png';
@@ -11,6 +10,7 @@ import Gato2 from '../../img/gato2.png';
 import Gato3 from '../../img/gato3.png';
 import NavBar from '../../Components/Navbar/barraHome';
 import BotaoHome from '../../Components/btnHome';
+import Tartaruga from '..//../img/tartaruga.png';
 import Cachorro4 from '..//../img/cachorro4.png'
 import Hamster from '..//../img/hamster.png';
 import Footer from '../../Components/footer/footer';
@@ -78,6 +78,35 @@ function Home() {
                     </div>
                 </div>
 
+                <div className="linha2">
+                    <div className='esquerdo4'>
+                        <h2>Produtos</h2>
+                        <p>Temos parcerias com alguns comércios para seu animal, sendo assim, você tem a chance de adotar e ainda continuar na nossa plataforma comprando os itens certos para o seu pet.</p>
+                        <Link to={"/Marketplace"}>
+                            <BotaoHome texto="Loja" cor="verde" />
+                        </Link>
+
+                    </div>
+                    <div className='direito4'>
+                        <img src={Tartaruga} className="img-fluid m-auto" id="tartaruga" alt="" />
+                    </div>
+                </div>
+
+                <div className="linha3">
+                    <div className='esquerdo5'>
+                        <img src={Cachorro4} className="img-fluid m-auto" id="cachorro4" alt="" />
+                    </div>
+                    <div className='direito5'>
+                        <h2>Aprendizagem</h2>
+                        <p>Se você quer saber mais de como cuidar de uma forma <br /> melhor do seu animal, você pode adiquirir mais <br /> conhecimento também na nossa plataforma.</p>
+
+                        <Link to={"/Aprendizagem"}>
+                            <BotaoHome texto="Aprender" cor="roxo" />
+                        </Link>
+
+                    </div>
+                </div>
+
                 <div className="linha4">
                     <div className='esquerdo6'>
                         <h2>Ferramentas</h2>
@@ -97,22 +126,6 @@ function Home() {
                         <img src={Hamster} className="img-fluid m-auto" id="hamster" alt="" />
                     </div>
                 </div>
-
-                <div className="linha3">
-                    <div className='esquerdo5'>
-                        <img src={Cachorro4} className="img-fluid m-auto" id="cachorro4" alt="" />
-                    </div>
-                    <div className='direito5'>
-                        <h2>Aprendizagem</h2>
-                        <p>Se você quer saber mais de como cuidar de uma forma <br /> melhor do seu animal, você pode adquirir mais <br /> conhecimento também na nossa plataforma.</p>
-
-                        <Link to={"/Aprendizagem"}>
-                            <BotaoHome texto="Aprender" cor="roxo" />
-                        </Link>
-
-                    </div>
-                </div>
-                
             </section>
 
             {/* CardHome */}
@@ -127,7 +140,6 @@ function Home() {
             <div>
                 <Footer />
             </div>
-
         </>
 
     );

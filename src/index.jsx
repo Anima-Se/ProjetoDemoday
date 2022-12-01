@@ -36,10 +36,7 @@ function App() {
             <Route path='/Perfil' element={<Perfil/>}/>
             <Route path='/Localizacao' element={<Localizacao/>}/>
             <Route path='/Conhecer' element={<Conhecer/>}/>
-            <Route path='/Cadastro1' element={<Cadastro1/>}/>
-            <Route path='/Cadastro2' element={<Cadastro2/>}/>
-            <Route path='/Cadastro3' element={<Cadastro3/>}/>
-            <Route path='/Cadastro4' element={<Cadastro4/>}/>
+        
         
           
           </Routes>

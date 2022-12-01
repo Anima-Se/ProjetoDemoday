@@ -1,154 +1,16 @@
 .main {
-    background-color: #f0f0f0;
+    background-color: rgb(0, 0, 0);
     height: 100vh;
     width: 100vw;
-    margin-top: 55px;
-    z-index: 2;
-  }
-  
-  
-  
-  
-  .perfil-border {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  
-  .PerfilConteudo {
-    width: 100vw;
-    height: 90vh;
-    background-image: url(../../img/perfil-background.png);
-    background-size: 100vw 90vh;
-  }
-  
-  .perfil-esquerda {
-    float: left;
-    width: 50%;
-    height: 660px;
-    padding-left: 10px;
-  }
-  
-  .perfil-row {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 40px;
-  }
-  
-  .perfil-esquerda h2 {
-    font-size: 24px;
-    float: left;
-    width: 50%;
-    color: #f5620e;
-  }
-  
-  .PerfilCards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    height: 600px;
-    margin-top: 10px;
-    justify-items: center;
-    align-items: center;
-    overflow-y: scroll;
-  }
-  
-  .perfil-direita {
-    float: right;
-    width: 50%;
-    height: 660px;
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-  
-  .perfil-direita h2 {
-    font-size: 24px;
-    float: left;
-    width: 100%;
-    height: 40px;
-    color: #f5620e;
-  }
-  
-  .ConteudoCimaPerfil {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-auto-rows: 40px;
-    align-items: center;
-  }
-  
-  .perfil-direita img {
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-  
-  .conteudoDireita {
-    margin-top: 70px;
-  }
-  
-  .rowCores {
-    width: 175px;
-    margin-left: 25px;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    align-items: center;
-  }
-  
-  .rowCores p {
-    margin-left: 5px;
-    margin-bottom: auto;
-    color: #000;
-    font-weight: 500;
-    font-size: 15px;
-  }
-  
-  #verde {
-    background-color: #589f7d;
-  }
-  
-  #rosa {
-    background-color: #ffb8b8;
-  }
-  
-  #amarelo {
-    background-color: #eaa85c;
-  }
-  
-  #roxo {
-    background-color: #b097d9;
-  }
-  
-  .blockPerfil {
-    width: 25px;
-    height: 25px;
-    background-color: #f5620e;
-  }
-  
-  #botao-perfil {
-    float: right;
-    background-color: transparent;
-    border: 2px solid #f5620e;
-    color: #f5620e;
-    border-radius: 10px;
-    height: 40px;
-    width: 150px;
-    transition: 0.5s;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-  }
-  
-  #botao-perfil:hover {
-    color: #f1f1f1;
-    background-color: #f5620e;
-  }
-  
-  #border-direita {
-    margin-top: 50px;
-  }
-  
+    border: 3px solid red;
+    margin-top: 2%;
+    z-index: 2rem;
+}
+
+.imgBack {
+    background-color: white;
+    height: 50%;
+    width: 3%;
+    margin-top: 0;
+
+}

@@ -1,0 +1,34 @@
+.porteBody{
+    height: 5rem;
+    width: 20rem;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    align-items: center;
+}
+
+.porteBody #tituloCb{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.porteBody .check{
+    justify-content: center;
+    display: flex;
+
+}
+
+#cb{
+    width: 12%;
+    height: 12%;
+}
+
+.txtCb{
+    display: flex;
+    flex-direction: row;
+}
+
+
+

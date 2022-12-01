@@ -1,6 +1,6 @@
 .footer{
-    height: 300px;
-    width: 100vw;
+    height: 50vh;
+    width: 98.7vw;
     background-color: #F1F1F1;
     display: flex;
     flex-direction: row;
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 250px;
+    height: 50vh;
     width: 58.34vw;
     padding-left: 70px;
     padding-top: 90px;
@@ -22,7 +22,7 @@
 }
 
 .direito7{
-    height: 250px;
+    height: 50vh;
     width: 41.34vw;
     display: flex;
     flex-direction: row;

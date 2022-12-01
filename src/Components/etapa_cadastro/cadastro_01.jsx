@@ -1,10 +1,48 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import './etapa.css';
 import InputCad from '../Input';
+import imgBtn from '../../img/seta.png';
 
 
-function Cadastro_01() {
+//  const saveUser = () => {
+//     const [email, setEmail] = useState('');
+//     const [senha, setSenha] = useState('');
+
+//     function handleSaveUser(){
+//         const data = {
+//             email , senha
+//         }
+
+//         console.log(data);
+//     }
+// }
+
+function Cadastro_01({ trocar, eveTeclado }) {
+
+
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+
+    function handleSaveUser() {
+        const data = {
+            email, senha
+        }
+
+        console.log(data);
+    }
+
+
+
+    function digitando(e) {
+        
+        setEmail( { [ e.target.name ] : e.target.value})
+        setSenha( { [ e.target.name ] : e.target.value})
+//e => setEmail(e.target.value)
+   }
+
+
+
 
     return (
 
@@ -19,19 +57,30 @@ function Cadastro_01() {
 
 
             <div >
+
                 <form action="" className='form01'>
 
-                    <InputCad fundo="Seu Email" tipo="email"/>
-                    
-                    <div className='olho'>
+                    <InputCad
+                        fundo="Seu Email"
+                        onChange={digitando}
+                        name='email'
+                        tipo="email"
+                        value={email} />
+                    <InputCad
+                        fundo="Sua Senha"
+                        onChange={digitando}
+                        name='senha'
+                        tipo="password"
+                        value={senha} />
 
-                        <InputCad fundo="Sua Senha" tipo="password"/>
+                    <InputCad fundo="Confirmar Senha" onChange={eveTeclado} name='confimarSenha' tipo="password" />
 
-                    </div>
-
-                    <InputCad fundo="Confirmar Senha" tipo="password"/>
-                    
                 </form>
+
+            </div>
+            <div className='divImg'>
+                <img className='imgNext' src={imgBtn} alt="botao proximo" onClick={handleSaveUser} />
+
             </div>
         </div>
 

@@ -1,0 +1,28 @@
+
+.calcBody{
+    border: 3px solid black;
+    height: 60%;
+    border-radius: 20px;
+    text-align: left;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.txtBody{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.topCalc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inputCalc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

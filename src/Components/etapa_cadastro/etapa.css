@@ -55,3 +55,11 @@
     max-width: 10rem;
     margin-bottom: 1rem;
 }
+
+.imgNext{
+    background: transparent;
+    cursor: pointer;
+}
+.divImg{
+    background-color: #F5620E;
+}
