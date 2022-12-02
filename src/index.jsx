@@ -6,13 +6,9 @@ import './index.css';
 
 import  Pergunta  from './pages/Pergunta';
 import Cadastro  from './pages/Cadastro';
-import Cadastro1 from './Components/etapa_cadastro/cadastro_01';
-import Cadastro2 from './Components/etapa_cadastro/cadastro_02';
-import Cadastro3 from './Components/etapa_cadastro/cadastro_03';
-import Cadastro4 from './Components/etapa_cadastro/cadastro_04';
 import CadastroPet from './pages/Cadastro_pet';
 import Home from './pages/Home';
-import Navbar from './Components/Navbar';
+import Navbar from './Components/Navbar/index';
 import Calculadora from './pages/Calculadora';
 import Conhecer from './pages/Conhecer';
 import Pets from './pages/Pets';

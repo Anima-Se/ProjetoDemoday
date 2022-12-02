@@ -1,19 +1,54 @@
 .aprender{
-    height: 90vh;
-    width: 100vw;
+    height: 390vh;
+    width: 98.7vw;
     padding-top: 9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.topo{
+    display: flex;
+    height: 70vh;
+    width: 98.5vw;
+}
+
+.lado1{
+    height: 67vh;
+    width: 50vw;
+}
+
+.lado2{
+    height: 67vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lado2 img{
+    height: 67vh;
+}
+
+.iconsAprender{
+    height: 8vh;
     display: flex;
     flex-direction: row;
 }
 
-.lado1{
-    height: 58vh;
-    width: 50vw;
-    border: 3px solid red;
+.cardsAprender{
+    height: 285vh;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.lado2{
-    height: 58vh;
-    width: 50vw;
-    border: 3px solid blue;
+.quebra{
+    flex-basis: 100%;
+    height: 7vh;
+}
+
+#aaa{
+    height: 40vh;
+
 }
