@@ -1,24 +1,19 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
 
-import Gato from "../../img/GatoCalc.png";
-import InputCalc from "./inputCalc/inputCalc";
-import CalcBody from "./calcBody/calcBody";
+const Calculadora = (({ retorno, tipo, valor}) => {
+  if(retorno === "inpRadio"){
+  return(
+    <>
+          <input type={tipo} name="porte" id='inpRadio' value={valor}/>
+    </>
+  )}
+  if(retorno === "inpNumber"){
+  return(
+    <>
+          <input type={tipo} id='inpNumber' min="1"/>
+    </>
+  )}
+})
 
-function Calc() {
-    return (
-        <>
-
-            <div className="calc">
-                <header className="tituloCalc">
-                    <img src={Gato} alt="" />
-                    <h2>Cachorro</h2>
-                </header>
-                <CalcBody/>
-                
-            </div>
-        </>
-    );
-}
-
-export default Calc;
+export default Calculadora;
