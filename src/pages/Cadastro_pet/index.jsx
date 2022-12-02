@@ -1,74 +1,59 @@
+
 import React from 'react';
-import './cadastro_pet.css';
+import '../Cadastro_pet/cadastro_pet.css';
 import InserirFoto from '../../img/img_inserir_foto_pet.png';
 import InputLabel from '../../Components/Label/inputLabel';
-
 import InputRadio from '../../Components/InputRadio/twoRadios/inputRadio';
 import InputThreeRadio from '../../Components/InputRadio/threeRadios/threeRadios';
+import SetaVoltar from '../../img/setaVoltar.png';
+import { Link } from "react-router-dom";
 
-// import Elipse1 from '../../img/Ellipse_3.png';
-import Elipse2 from '../../img/Ellipse_2.png';
-
-function Cadastro_pet() {
+function CadastroPet() {
     return (
-        <div className='pai'>
 
-
-
-
-            <div className='fundo'>
-                {/* <img src={Elipse1} className='elipse01' /> */}
-                <img src={Elipse2} className='elipse02' />
+        <section className='cadastroPet'>
+            <div className='divSeta'>
+                <Link to={"/Perguntas"}>
+                    <img src={SetaVoltar} alt="" />
+                </Link>
             </div>
-
-            <div className="container_cadastro_pet">
-
-                <div   className='ImgInserir'>
-
-                    <img src={InserirFoto}   className='ImgInserir' />
+            <section className='conteudoPet'>
+                <div className='parteCima'>
+                    <img src={InserirFoto} />
                 </div>
 
+                <div className='parteBaixo'>
+                    <div className='esquerdoPets'>
 
-                <div className='divBoxinputs'>
+                        <InputLabel texto='Tipo do pet' tipo='select' fundo='Selecione um tipo' />
+                        <InputLabel texto='Possui alguma raça?' tipo='text' fundo='Digite aqui' />
+                        <InputLabel texto='Alguma observação? ' tipo='text' fundo='Digite aqui' />
+                        <InputRadio textoLabel="Gênero" valor1="Macho" valor2="Fêmea" nameRadio="generoRadio" />
+                        <InputThreeRadio textoLabel="Porte do pet" valor1="Pequeno" valor2="Médio" valor3="Grande" nameRadio="porte" />
+                        <InputRadio textoLabel="O pet precisa de cuidados especiais?" valor1="Sim" valor2="Não" nameRadio="cuidadosEspeciais" />
 
+                    </div>
+                    <div className='direitoPets'>
 
-                    <InputLabel texto='Tipo do pet' tipo='select' fundo='Selecione um tipo' />
+                        <InputLabel texto='Nome do pet' tipo='select' fundo='Digite aqui' />
+                        <InputLabel texto='Idade do pet' tipo='text' fundo='Digite aqui' />
+                        <InputLabel texto='Possuí documento / pedigree? ' tipo='text' fundo='Digite aqui' />
+                        <InputLabel texto='Motivo da doação ' tipo='text' fundo='Digite aqui' />
+                        <InputThreeRadio textoLabel="É castrado?" valor1="Sim" valor2="Não" valor3="Não sei" nameRadio="castrado" />
+                        <InputThreeRadio textoLabel="Está vacinado?" valor1="Sim" valor2="Não" valor3="Não sei" nameRadio="vacinado" />
+                        <InputThreeRadio textoLabel="Já teve cria?" valor1="Sim" valor2="Não" valor3="Não sei" nameRadio="vacinado" />
 
-                    <InputLabel texto='Possui alguma raça?' tipo='text' fundo='Digite aqui' />
-
-                    <InputLabel texto='Alguma observação? ' tipo='text' fundo='Digite aqui' />
-
+                    </div>
                 </div>
 
-                <div>
-                    <InputRadio textoLabel="teste" valor1="" valor2=""/>
-                    <InputThreeRadio textoLabel="teste" valor1="" valor2="" valor3=""/>
+                <div className='divBotao'>
+                    <button>Enviar</button>
                 </div>
+            </section>
+        </section>
 
-
-
-
-                <div className='divBoxinputs'>
-
-
-                    <InputLabel texto='Nome do pet' tipo='text' fundo='Digite aqui' />
-
-                    <InputLabel texto='Idade do pet' tipo='number' fundo='Quantos anos ele tem?' />
-
-                    <InputLabel texto='Possui documento / pedigree ??' tipo='text' fundo='Coloca ele aqui' />
-
-                    <InputLabel texto='Conta pra gente o motivo da doação' tipo='text' fundo='Pode escrever por aqui' />
-
-                </div>
-
-
-            </div>
-
-
-
-
-        </div>
-    )
+    );
 }
 
-export default Cadastro_pet;
+export default CadastroPet
+

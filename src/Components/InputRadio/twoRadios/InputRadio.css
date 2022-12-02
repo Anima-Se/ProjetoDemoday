@@ -4,7 +4,24 @@
 
 .btnRadio{
     display: inline-block;
-    width: 15px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     margin-left: .4rem;  
+}
+
+
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    
+}
+
+.radios{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
 }

@@ -1,53 +1,91 @@
-.pai{
-    height: 150vh;
-    display: flex;
-    
-    
-
-}
-.container_cadastro_pet{
-    margin: 0 auto;
-    background-color: #F0F0F0 !important;
-	width: 70rem;
-	height: 50rem;
-
-    
+.cadastroPet{
+    background: url('../../img/background-conhecer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
 
+.conteudoPet{
+    height: 95%;
+    width: 60%;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.315), 0 6px 20px 0 rgba(0, 0, 0, 0.315);
+}
+
+.parteCima{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parteCima img{
+    height: 95%;
+    width: 25%;
     
-
-
 }
 
-.fundo{
-    z-index: 0;
+.parteBaixo{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
+.esquerdoPets{
+    height: 100%;
+    width: 50%;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-/* .elipse01{
-    background: transparent;
-    left: 0px;
-    top: -100rem;
-    z-index: -1;
-}  */
+.direitoPets{
+    height: 100%;
+    width: 50%;
+    padding-left: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-.elipse02{
-    background: transparent;
+.divSeta{
     position: absolute;
-    right: 0;
-    top: 150vh;
-    z-index: -1;
+    top: 15px;
+    left: 50px;
 }
 
-
-.ImgInserir{
-    background: transparent;
+.divSeta img{
+    cursor: pointer;
+    width: 45px;
 }
 
-.divBoxinputs{
-    background: transparent;
-}.divBoxinputs label{
-    background: transparent;
+.divBotao{
+    display: flex;
+    justify-content: center;
+}
+
+.divBotao button{
+    background-color: #F5620E;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #F1F1F1;
+
+}
+
+.divBotao button:hover{
+    background-color: #F1F1F1;
+    color: #F5620E;
+    border: 2px solid #F5620E;
 }
