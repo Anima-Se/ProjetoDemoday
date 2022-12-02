@@ -35,11 +35,11 @@ function Cadastro_01({ trocar, eveTeclado }) {
 
 
     function digitando(e) {
-        
-        setEmail( { [ e.target.name ] : e.target.value})
-        setSenha( { [ e.target.name ] : e.target.value})
-//e => setEmail(e.target.value)
-   }
+
+        setEmail({ [e.target.name]: e.target.value })
+        setSenha({ [e.target.name]: e.target.value })
+        //e => setEmail(e.target.value)
+    }
 
 
 
@@ -59,7 +59,7 @@ function Cadastro_01({ trocar, eveTeclado }) {
             <div >
 
                 <form action="" className='form01'>
-
+        <p> teste </p>
                     <InputCad
                         fundo="Seu Email"
                         onChange={digitando}
