@@ -8,10 +8,30 @@ import { Link } from "react-router-dom";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import AbrirDiv from '../../Components/openDiv/abrirDiv';
 import FecharDiv from '../../Components/openDiv/fecharDiv';
-import Map from '../../img/map.png'; 
-import User from '../../img/user.png'; 
+import Map from '../../img/map.png';
+import User from '../../img/user.png';
+import emailjs from '@emailjs/browser';
 
 function Conhecer() {
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        const templateParams = {
+            // from_name: nome,
+            // message: message,
+            // email: email
+        }
+
+        emailjs.send("service_tr4yadg", "template_tpl39ti", templateParams, "YE8upLH1RiAYOjcan")
+        .then((response) => {
+            alert("Email enviado", response.status, response.text);
+        })
+        // (err) =>{
+        //     alert("Erro", err);
+        // }
+    }
+
     return (
         <>
             <div>
@@ -31,6 +51,8 @@ function Conhecer() {
                             {/* <img src={Check} alt="" className="check" /> */}
 
                             <AiOutlineCheckCircle id="check" onClick={FecharDiv} />
+                            <button id="botaoAdotar" onClick={sendEmail}> Adotar agora</button>
+
 
 
 
