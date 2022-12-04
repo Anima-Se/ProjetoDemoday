@@ -5,6 +5,8 @@ import BtnSlide from '../../Components/btn-slide/btn-slide'
 
 //imgs
 import Seta from "../../img/seta.png";
+import Logo from '../../img/logo.png';
+import {Link} from "react-router-dom";
 
 
 import Cadastro_01 from '../../Components/etapa_cadastro/cadastro_01';
@@ -61,7 +63,14 @@ function Cadastro() {
 
     return (
         <div className='background'>
-
+            <Link to={'/'}>
+            <img
+              src={Logo}
+              width="180"
+              className="d-inline-block align-right"
+              alt="Anima-se Logo"
+            />
+          </Link>
 
             <p>{JSON.stringify(objcadastro)}</p>
             <div className='div_pai'>
@@ -69,7 +78,7 @@ function Cadastro() {
 
                     <div className='login_cadastro'>
 
-                        <BtnSlide />
+                        <BtnSlide page="cadastro"/>
                         
                     </div>
 

@@ -3,28 +3,39 @@ import "./btn-slide.css";
 
 import { Link } from 'react-router-dom';
 
-function BtnSlide() {
-    function esquerda(){
-        document.getElementById("slide").style.margin = "0 50% 0 0"
-        document.getElementById("login").style.color = "#fff"
-        document.getElementById("registrar").style.color = "#010101"
+
+const BtnSlide = (({page}) =>{
+    if(page == "entrar" ){
+        return (
+                <div className='slider-btn'>
+                    <Link to={"/Login"}>
+                        <a id="login">Entrar</a>
+                    </Link>
+                    
+                    <span className='slider' id='slide'></span>
+        
+                    <Link to={"/Cadastro"}>
+                        <a id="registrar">Registrar</a>
+                    </Link>
+                </div>
+            )
     }
-
-    function direita(){
-        document.getElementById("slide").style.margin = "0 0 0 50%"
-        document.getElementById("login").style.color = "#010101"
-        document.getElementById("registrar").style.color = "#fff"
-    }
-
-
-    return(
+    if(page == "cadastro"){
+        return (
             <div className='slider-btn'>
-                <a onClick={esquerda} id="login">Entrar</a>
-                <span className='slider' id='slide'></span>
+                <Link to={"/Login"}>
+                    <a id="login2">Entrar</a>
+                </Link>
                 
-                <a onClick={direita} id="registrar">Registrar</a>
+                <span className='slider2' id='slide2'></span>
+    
+                <Link to={"/Cadastro"}>
+                    <a id="registrar2">Registrar</a>
+                </Link>
             </div>
-    )
-}
+        )
+    }
+})
+
 
 export default BtnSlide;

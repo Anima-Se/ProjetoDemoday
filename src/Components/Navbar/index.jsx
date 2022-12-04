@@ -32,7 +32,7 @@ const Barra = (() => {
                 <Link to={'/Aprendizagem'} className='link'>APRENDIZAGEM</Link>
               </Nav>
             </Navbar.Collapse>
-            <Link to={"/Cadastro"} className='iconLogin'>
+            <Link to={"/Login"} className='iconLogin'>
               <BiUserCircle id='iconLogin' />
             </Link>
           </Container>

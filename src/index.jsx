@@ -6,6 +6,7 @@ import './index.css';
 
 import  Pergunta  from './pages/Pergunta';
 import Cadastro  from './pages/Cadastro';
+import Login  from './pages/Login/login.jsx';
 import CadastroPet from './pages/Cadastro_pet';
 import Home from './pages/Home';
 import Navbar from './Components/Navbar/index';
@@ -24,6 +25,7 @@ function App() {
             <Route path='/' element={<Home/>}/>
             <Route path='/Perguntas' element={<Pergunta />} />;
             <Route path='/Cadastro' element={<Cadastro /> } />
+            <Route path='/Login' element={<Login /> } />
             <Route path='/CadastroPet' element={<CadastroPet/> } />
             <Route path='/Navbar' element={<Navbar/>}/>
             <Route path='/Aprendizagem' element={<Aprendizagem/>}/>

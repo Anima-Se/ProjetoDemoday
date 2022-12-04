@@ -16,8 +16,6 @@
 
 #login{
     color: white;
-
-    
 }
 
 
@@ -35,4 +33,21 @@
 .slider-btn a{
     cursor: pointer;
     background: none;
+    text-decoration: none;
+    color: #010101;
+    font-weight: bold;
+}
+
+.slider2{
+    position: absolute;
+    background: orange;
+    width: 50%;
+    height: 100%;
+    background: #F5620E;
+    border-radius: 20px;
+    z-index: -1;
+    margin: 0 0 0 50%;
+}
+#registrar2{
+    color: #fff;
 }
