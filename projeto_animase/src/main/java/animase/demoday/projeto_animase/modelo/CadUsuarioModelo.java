@@ -30,7 +30,7 @@ public class CadUsuarioModelo {
     private String cpf;
     private Date data_nascimento;
     private String cep;
-    private String endereco;
+    private String logradouro;
     private String num_logradouro;
     private String complemento;
 
