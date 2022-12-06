@@ -1,7 +1,7 @@
 import React from "react";
 import "./InputRadio.css";
 
-const InputRadio = ({ textoLabel, valor1, valor2, nameRadio }) => {
+const InputRadio = ({ textoLabel, valor1, valor2, nameRadio, change }) => {
   return (
     <div>
       <label className="labelRadio TextoLabel">{textoLabel} </label>
@@ -12,6 +12,7 @@ const InputRadio = ({ textoLabel, valor1, valor2, nameRadio }) => {
           <input
             type="radio"
             value={valor1}
+            onChange={change}
             name={nameRadio}
             className="btnRadio"
           ></input>
@@ -24,13 +25,17 @@ const InputRadio = ({ textoLabel, valor1, valor2, nameRadio }) => {
           <input
             type="radio"
             value={valor2}
+            onChange={change}
             name={nameRadio}
             className="btnRadio"
           ></input>
         </div>
       </div>
     </div>
+    
   );
 };
+
+
 
 export default InputRadio;

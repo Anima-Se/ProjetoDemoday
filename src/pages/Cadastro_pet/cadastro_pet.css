@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -20,7 +21,7 @@
 }
 
 .parteCima{
-    height: 20%;
+    height: 18%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -78,7 +79,7 @@
     background-color: #F5620E;
     border-radius: 10px;
     width: 100px;
-    height: 25px;
+    height: 35px;
     font-family: 'Poppins', sans-serif;
     color: #F1F1F1;
 
@@ -88,4 +89,20 @@
     background-color: #F1F1F1;
     color: #F5620E;
     border: 2px solid #F5620E;
+}
+
+#selectPet{
+    border: 1px solid #F5620E;
+    border-radius: 10px;
+    width: 250px;
+    height: 35px;
+    background: transparent;
+}
+
+.tabela{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

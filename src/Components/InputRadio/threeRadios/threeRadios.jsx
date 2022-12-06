@@ -1,7 +1,7 @@
 import React from "react";
 import "./threeRadios.css";
 
-const InputThreeRadio = ({ textoLabel, valor1, valor2, valor3, nameRadio }) => {
+const InputThreeRadio = ({ textoLabel, valor1, valor2, valor3, nameRadio, change }) => {
   return (
     <div>
       <label className="labelRadio TextoLabel">{textoLabel} </label>
@@ -11,6 +11,7 @@ const InputThreeRadio = ({ textoLabel, valor1, valor2, valor3, nameRadio }) => {
         <label className="opcaoRadio ">{valor1}</label>
           <input
             type="radio"
+            onChange={change}
             value={valor1}
             name={nameRadio}
             className="btnRadio"
@@ -22,6 +23,7 @@ const InputThreeRadio = ({ textoLabel, valor1, valor2, valor3, nameRadio }) => {
 
           <input
             type="radio"
+            onChange={change}
             value={valor2}
             name={nameRadio}
             className="btnRadio"
@@ -34,6 +36,7 @@ const InputThreeRadio = ({ textoLabel, valor1, valor2, valor3, nameRadio }) => {
           <input
             type="radio"
             value={valor3}
+            onChange={change}
             name={nameRadio}
             className="btnRadio"
           ></input>
@@ -41,7 +44,13 @@ const InputThreeRadio = ({ textoLabel, valor1, valor2, valor3, nameRadio }) => {
 
       </div>
     </div>
+
+    
+
+
   );
+
+  
 };
 
 export default InputThreeRadio;

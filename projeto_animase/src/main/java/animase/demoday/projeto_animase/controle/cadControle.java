@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import animase.demoday.projeto_animase.modelo.CadAnimalModelo;
+// import animase.demoday.projeto_animase.modelo.CadAnimalModelo;
 import animase.demoday.projeto_animase.modelo.CadUsuarioModelo;
 // import animase.demoday.projeto_animase.modelo.RespostaModelo;
 import animase.demoday.projeto_animase.servico.CadServico;
@@ -37,11 +37,11 @@ public class cadControle {
     // }
 
 
-    @PostMapping("/cadastrarAnimal")
-    public ResponseEntity<?> cadastrarAnimal(@RequestBody CadAnimalModelo cam) {
+    // @PostMapping("/cadastrarAnimal")
+    // public ResponseEntity<?> cadastrarAnimal(@RequestBody CadAnimalModelo cam) {
       
-        return cs.CadastrarAnimal(cam);
-    }
+    //     return cs.CadastrarAnimal(cam);
+    // }
 
 
     @PostMapping("/cadastraruser")

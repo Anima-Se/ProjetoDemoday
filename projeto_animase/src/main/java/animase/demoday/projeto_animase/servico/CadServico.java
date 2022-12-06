@@ -5,11 +5,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import animase.demoday.projeto_animase.modelo.CadAnimalModelo;
+// import animase.demoday.projeto_animase.modelo.CadAnimalModelo;
 import animase.demoday.projeto_animase.modelo.CadOngModelo;
 import animase.demoday.projeto_animase.modelo.CadUsuarioModelo;
 import animase.demoday.projeto_animase.modelo.RespostaModelo;
-import animase.demoday.projeto_animase.repositorio.repositorioAnimal;
+// import animase.demoday.projeto_animase.repositorio.repositorioAnimal;
 import animase.demoday.projeto_animase.repositorio.repositorioOng;
 import animase.demoday.projeto_animase.repositorio.repositorioUsuario;
 
@@ -26,8 +26,8 @@ public class CadServico {
     @Autowired
     private repositorioOng rpOng;
 
-    @Autowired
-    private repositorioAnimal rpAni;
+    // @Autowired
+    // private repositorioAnimal rpAni;
 
     public Iterable<CadUsuarioModelo> listar() {
 
@@ -78,30 +78,30 @@ public class CadServico {
 
 
 
-    // -------------- CADASTRO ANIMAL ------------------------
+    // // -------------- CADASTRO ANIMAL ------------------------
 
-    public ResponseEntity<?> CadastrarAnimal(CadAnimalModelo cam) {
+    // public ResponseEntity<?> CadastrarAnimal(CadAnimalModelo cam) {
 
-        if (cam.getNome_animal().equals("")) {
+    //     if (cam.getNome_animal().equals("")) {
 
-            rm.setMensagem("Nome do animal nao identificado! ");
-            return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
+    //         rm.setMensagem("Nome do animal nao identificado! ");
+    //         return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
 
-        } else if (cam.getGenero_animal().equals("")) {
+    //     } else if (cam.getGenero_animal().equals("")) {
 
-            rm.setMensagem("Genero esta vazio! ");
-            return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
-        } else if ( cam.getDesc_animal().equals("")){
+    //         rm.setMensagem("Genero esta vazio! ");
+    //         return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
+    //     } else if ( cam.getDesc_animal().equals("")){
 
-            rm.setMensagem("A descrição do animal esta vazia ");
-            return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
-        }else{
-             return new ResponseEntity<CadAnimalModelo>(rpAni.save(cam), HttpStatus.CREATED);
+    //         rm.setMensagem("A descrição do animal esta vazia ");
+    //         return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
+    //     }else{
+    //          return new ResponseEntity<CadAnimalModelo>(rpAni.save(cam), HttpStatus.CREATED);
 
-        }
+    //     }
 
        
-    }
+    // }
 
 
 
