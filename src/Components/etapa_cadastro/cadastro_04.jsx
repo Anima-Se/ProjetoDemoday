@@ -20,15 +20,12 @@ function Cadastro_04({trocar }) {
             <form action="" className='form01'>
                 <img src={imgDog} className="imgDog"/>
                 <InputCad fundo="Apelido" tipo="text"/>
-      
-                
-           
             </form>
         </div>
 
         <div className='divImg'>
                 <img className='imgNext' src={imgBtn} alt="botao proximo" onClick={trocar} />
-
+                
             </div>
     </>
     )

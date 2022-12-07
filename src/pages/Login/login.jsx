@@ -6,23 +6,23 @@ import InputCad from '../../Components/Input';
 import { BsGoogle } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import Logo from '../../img/logo.png';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Login() {
     return (
         <div className='background'>
-           <Link to={'/'}>
-            <img
-              src={Logo}
-              width="180"
-              className="d-inline-block align-right"
-              alt="Anima-se Logo"
-            />
-          </Link>
+            <Link to={'/'}>
+                <img
+                    src={Logo}
+                    width="180"
+                    className="d-inline-block align-right"
+                    alt="Anima-se Logo"
+                />
+            </Link>
             <div className='div_pai'>
                 <div className='container' >
                     <div className="div-top">
-                        <BtnSlide  page="entrar"/>
+                        <BtnSlide page="entrar" />
                     </div>
                     <form action="" className='entrar'>
                         <InputCad
@@ -33,6 +33,7 @@ function Login() {
                             fundo="Sua Senha"
                             name='senha'
                             tipo="password" />
+
 
                         <div className='divImg'>
                             <input type="submit" value="Entrar" />
@@ -47,10 +48,21 @@ function Login() {
                         <BsGoogle />
                         <BsFacebook />
                     </div>
+
+                    <div className='termo'>
+                        <input type="checkbox" name="" id="checktermo" required />
+                        <a href="https://drive.google.com/file/d/1RcRpjUfn7Elwfr96cuZlLnIbazmbc90P/view?usp=sharing" id='termo'>
+                            Termo de responsabilidade
+                        </a>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
     );
 }
+
 
 export default Login;

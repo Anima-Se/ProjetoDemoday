@@ -86,3 +86,23 @@
 
     font-size: 20px;
 }
+
+#termo{
+    font-size: small;
+    text-align: center;
+    padding-left: 1rem;
+    text-decoration: none;
+    color: #F5620E;
+}
+
+#checktermo{
+    width: 6%;
+    margin-top: 0.5rem;
+}
+
+.termo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
