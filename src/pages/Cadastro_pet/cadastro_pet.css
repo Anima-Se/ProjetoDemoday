@@ -63,6 +63,8 @@
     position: absolute;
     top: 15px;
     left: 50px;
+
+    z-index: 5;
 }
 
 .divSeta img{

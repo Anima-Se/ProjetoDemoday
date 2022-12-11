@@ -190,6 +190,7 @@ animation: float 3s ease-in-out infinite;
 #gato3{
     height: 350px;
     width: 46.35vw;
+    object-fit: cover;
 }
 
 .direito3 h2{
@@ -240,10 +241,10 @@ animation: float 3s ease-in-out infinite;
     font-weight: 700;
     font-size: 20px;
 }
-
-#tartaruga{
+#cachorro4{
     height: 350px;
-    width: 49.35vw;
+    width: 49.4vw;
+    object-fit: cover;
 }
 
 /* Linha3 */
@@ -282,52 +283,10 @@ animation: float 3s ease-in-out infinite;
     font-size: 20px;
 }
 
-#cachorro4{
-    height: 350px;
-    width: 46.35vw;
-}
-
-
-/* Linha4 */
-
-.linha4{
-    display: flex;
-    flex-direction: row;
-    background-color: #589F7D;
-    height: 350px;
-    width: 98.7vw;
-}
-
-.esquerdo6{
-    height: 350px;
-    width: 49.35vw;
-}
-
-.esquerdo6{
-    padding-left: 15px;
-    height: 350px;
-    width: 49.35vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.esquerdo6 h2{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    font-size: 30px;
-}
-
-.esquerdo6 p{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-}
-
 #hamster{
     height: 350px;
-    width: 49.35vw;
+    width: 46.35vw;
+    object-fit: cover;
 }
 
 .linhabtn{

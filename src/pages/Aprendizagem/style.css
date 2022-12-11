@@ -1,7 +1,8 @@
 .aprender{
-    height: 390vh;
-    width: 98.7vw;
+    height: auto;
+    width: auto;
     padding-top: 9rem;
+    padding-bottom: 9rem;
     display: flex;
     flex-direction: column;
 }
@@ -46,9 +47,4 @@
 .quebra{
     flex-basis: 100%;
     height: 7vh;
-}
-
-#aaa{
-    height: 40vh;
-
 }

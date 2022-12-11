@@ -19,4 +19,7 @@
 .card p{
     font-family: 'Poppins', sans-serif;
 }
+.cardbody-card{
+    height: 15rem;
+}
 
