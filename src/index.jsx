@@ -6,7 +6,7 @@ import './index.css';
 
 import  Pergunta  from './pages/Pergunta';
 import Cadastro  from './pages/Cadastro';
-import Login  from './pages/Login/login.jsx';
+import Login  from './pages/Login/index.jsx';
 import CadastroPet from './pages/Cadastro_pet';
 import Home from './pages/Home';
 import Navbar from './Components/Navbar/index';
