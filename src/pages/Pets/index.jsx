@@ -11,6 +11,7 @@ import GatoPets from '../../img/gatoPets.jpg';
 import CachorroPets2 from '../../img/cachorroPets2.jpg';
 import CoelhoPets from '../../img/coelho.jpg';
 import CachorroPets3 from '../../img/cachorroPets3.jpg';
+import Rodape from "../../Components/footer/footer";
 
 
 
@@ -33,10 +34,24 @@ function Pets() {
 
                 <section className="filtro">
                     <TopoFiltro />
-                    <TipoFiltro titulo="Distância" resultado="15Km" />
-                    <DivFiltro nomeOpcao="Porte" op1="Pequeno" op2="Médio" op3="Grande"/>
-                    <DivFiltro nomeOpcao="Idade" op1="Filhote" op2="Adulto" op3="Sênior" />
-                    <DivFiltro nomeOpcao="Animal" op1="Cachorro" op2="Gato" op3="Aves" op4="Roedores" op5="Outros" />
+                    <TipoFiltro titulo="Distância" resultado="01 Km" />
+                    <h2 className="nomeTituloFiltro">Porte</h2>
+                    <DivFiltro op="Pequeno"/>
+                    <DivFiltro op="Médio" />
+                    <DivFiltro op="Grande"/>
+                    <hr/>
+                    <h2 className="nomeTituloFiltro">Idade</h2>
+                    <DivFiltro op="Filhote"/>
+                    <DivFiltro op="Adulto"/>
+                    <DivFiltro op="Sênior"/>
+                    <hr/>
+                    <h2 className="nomeTituloFiltro">Animal</h2>
+                    <DivFiltro op="Aves"/>
+                    <DivFiltro op="Cachorro"/>
+                    <DivFiltro op="Gato"/>
+                    <DivFiltro op="Peixes"/>
+                    <DivFiltro op="Roedores"/>
+                    <DivFiltro op="Outros"/>
                 </section>
                 
                 <div className="petsbox">
@@ -46,13 +61,14 @@ function Pets() {
                     <div className="baixo">
                         <AnuncioPet imgPets={CachorroPets} nomePet="Mel" sexo="Fêmea" idade="7 anos" doador="Ong Céu Azul"/>
                         <AnuncioPet imgPets={PapagaioPets} nomePet="Tico" sexo="Macho" idade=" 9 meses" doador="João Silva"/>
-                        <AnuncioPet imgPets={GatoPets} nomePet="Bolinha" sexo="Fêmea" idade="1 ano" doador="Ong Girassol"/>
-                        <AnuncioPet imgPets={CachorroPets3} nomePet="Laika" sexo="Fêmea" idade="3 meses" doador="Ong Laço Forte"/>
-                        <AnuncioPet imgPets={CoelhoPets} nomePet="Lily" sexo="Fêmea" idade="1 ano" doador="Ong Céu Azul"/>
-                        <AnuncioPet imgPets={CachorroPets2} nomePet="Bob" sexo="Macho" idade="8 anos" doador="Maria Santos"/>
+                        <AnuncioPet imgPets={GatoPets} nomePet="Bolinha" sexo="Fêmea" idade="1 ano" doador="Ong Girassol" vantagem="não"/>
+                        <AnuncioPet imgPets={CachorroPets3} nomePet="Laika" sexo="Fêmea" idade="3 meses" doador="Ong Laço Forte" vantagem="não"/>
+                        <AnuncioPet imgPets={CoelhoPets} nomePet="Lily" sexo="Fêmea" idade="1 ano" doador="Ong Céu Azul" vantagem="não"/>
+                        <AnuncioPet imgPets={CachorroPets2} nomePet="Bob" sexo="Macho" idade="8 anos" doador="Maria Santos" vantagem="não"/>
                     </div>
                 </div>
             </main>
+            <Rodape/>
         </>
 
 

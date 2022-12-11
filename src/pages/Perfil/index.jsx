@@ -11,7 +11,7 @@ import InformacoesPerfil from "../../Components/Perfil/Informacoes";
 import Gatoback from "../../img/perfil-gato.jpg";
 import FotoPerfil from "../../img/perfil-foto.jpg";
 import { AiOutlineSetting } from 'react-icons/ai';
-import  Footer from '../../Components/footer/footer'
+import Footer from '../../Components/footer/footer'
 
 function Perfil() {
   return (
@@ -29,7 +29,6 @@ function Perfil() {
           email="selenamuitafe@gmail.com"
           publicacoes="4"
         />
-
         <div className="perfil-border"></div>
 
         <div className="PerfilConteudo">

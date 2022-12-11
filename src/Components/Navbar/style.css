@@ -3,7 +3,7 @@
 .barraNav{
   max-height: 55px;
   z-index: 2;
-background: #f1f1f1;
+  background: #f1f1f1;
 }
 .Pai_Nav{
   position: fixed;
@@ -72,4 +72,9 @@ background: #f1f1f1;
 #waveNavbar{
   width: 100vw;
   height: 110px;
+}
+
+.link-dropdown{
+  text-decoration: none !important;
+  color: #010101 !important;
 }

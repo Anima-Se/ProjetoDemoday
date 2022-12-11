@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import Wave from '../../img/ondaNav.png';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const Barra = (() => {
   return (
@@ -32,9 +33,20 @@ const Barra = (() => {
                 <Link to={'/Aprendizagem'} className='link'>APRENDIZAGEM</Link>
               </Nav>
             </Navbar.Collapse>
-            <Link to={"/Login"} className='iconLogin'>
+            <Dropdown>
+            <Dropdown.Toggle variant="white" id="dropdown-basic">
               <BiUserCircle id='iconLogin' />
-            </Link>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              
+                <Dropdown.Item ><Link to={"/Perfil"} className='link-dropdown'>Perfil </Link></Dropdown.Item>
+                <Dropdown.Item ><Link to={"/Login"} className='link-dropdown'>Login </Link></Dropdown.Item>
+                <Dropdown.Item ><Link to={"/Cadastro"} className='link-dropdown'>Resgistrar </Link></Dropdown.Item>
+             
+              
+            </Dropdown.Menu>
+          </Dropdown>
           </Container>
         </Navbar>
         <img src={Wave} alt="" id='waveNavbar'/>

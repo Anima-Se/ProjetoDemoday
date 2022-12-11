@@ -11,7 +11,9 @@
     padding-top: 12rem;
 
 }
-
+.nomeTituloFiltro{
+    padding: 0 10px;
+}
 
 .petsbox {
     height: 1102px;

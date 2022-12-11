@@ -15,6 +15,7 @@ import Aquario from '../../img/aquario.png';
 import CoelhoAprender from '../../img/coelhoAprender.png';
 import CoelhoAprender2 from '../../img/coelhoAprender2.png';
 import HamsterAprender from '../../img/hamsterAprender.jpg';
+import Rodape from '../../Components/footer/footer';
 
 
 
@@ -68,6 +69,7 @@ function Aprendizagem(){
                     <Card2 img={GatoAprendizagem} pet="Gato" titulo="Primeiro Banho" texto="Você sabe que os felinos têm fama de não gostarem de água, não é? Será que eles precisam mesmo de banho? Como lavar?  Se você tem essa e outras dúvidas, este artigo vai ajudar."/>
                 </div>
             </section>
+            <Rodape/>
         </>
         
 

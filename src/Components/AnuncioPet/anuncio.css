@@ -3,7 +3,7 @@
     background-color:#F1F1F1;
     width: 37%;
     height: 240px;
-    border-radius: 25px;
+    border-radius: 13px;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -16,6 +16,7 @@
     height: 220px;
     width: 100%;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .esquerdo8{
@@ -35,7 +36,11 @@
     color: #F5620E;
     text-align: center;
     font-family: 'Itim';
-    font-size: 30px;
+    font-size: 25px;
+}
+.direito8 li{
+    font-size: 19px;
+    font-weight: 500;
 }
 
 .direito8 p{
@@ -61,4 +66,9 @@ ul{
 li{
     padding: 0;
     font-size: 20px;
+}
+
+#anuncio-seta{
+    color: #589F7D;
+    font-size: 22px;
 }

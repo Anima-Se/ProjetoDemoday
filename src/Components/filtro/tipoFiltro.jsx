@@ -7,7 +7,7 @@ function TipoFiltro({titulo, resultado}) {
 
         <div className="nomeFiltro">
             <h2>{titulo}</h2>
-            <p>barra</p>
+            <input type="range" min="1" max="100" className="inpEstilo"/>
             <h2 id="preco">{resultado}</h2>
 
         </div>
