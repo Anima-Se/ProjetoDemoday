@@ -29,10 +29,14 @@ function Login() {
                             fundo="Seu Email"
                             name='email'
                             tipo="email" />
-                        <InputCad
-                            fundo="Sua Senha"
-                            name='senha'
-                            tipo="password" />
+
+                        <div className="field">
+
+                            <InputCad
+                                fundo="Sua Senha"
+                                name='senha'
+                                tipo="password" />
+                        </div>
 
 
                         <div className='divImg'>
@@ -50,7 +54,8 @@ function Login() {
                     </div>
 
                     <div className='termo'>
-                        <input type="checkbox" name="" id="checktermo" required />
+                        <br />
+                        <br />
                         <a href="https://drive.google.com/file/d/1RcRpjUfn7Elwfr96cuZlLnIbazmbc90P/view?usp=sharing" id='termo'>
                             Termo de responsabilidade
                         </a>

@@ -1,7 +1,10 @@
 package animase.demoday.projeto_animase.controle;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.Optional;
 
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,11 +16,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import animase.demoday.projeto_animase.modelo.CadPetModelo;
-// import animase.demoday.projeto_animase.modelo.CadAnimalModelo;
+
 import animase.demoday.projeto_animase.modelo.CadUsuarioModelo;
+
 import animase.demoday.projeto_animase.modelo.RespostaModelo;
+
 import animase.demoday.projeto_animase.servico.CadPetServicos;
-// import animase.demoday.projeto_animase.modelo.RespostaModelo;
+
 import animase.demoday.projeto_animase.servico.CadServico;
 
 //Controle responsavel por criar rotas e tbm ter acesso a requisiçoes do tipo post, get, put e delet 
@@ -29,24 +34,23 @@ public class cadControle {
     @Autowired
     private CadServico cs;
 
-    // @DeleteMapping("/remover/{codigo}")
-    // public ResponseEntity<RespostaModelo> remover(@PathVariable long codigo){
-    // return ps.remover(codigo);
-    // }
+    @Autowired
+    private RespostaModelo rm;
 
+    
     @PostMapping("/cadastraruser")
-    public ResponseEntity<?> cadastrarUsuario(@RequestBody CadUsuarioModelo cum) {
+    public ResponseEntity<?> CadastrarUsuario(@RequestBody CadUsuarioModelo cum) {
 
         return cs.CadastrarUsuario(cum);
+
     }
+
+
 
     @GetMapping("/listar")
     public Iterable<CadUsuarioModelo> listar() {
         return cs.listar();
     }
-
-   
-
 
     //////////////////////////////////////////////////////////////////
 
@@ -80,8 +84,6 @@ public class cadControle {
         return cps.listar();
 
     }
-
-
 
     @GetMapping("/")
     public String rota() {

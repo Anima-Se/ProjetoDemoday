@@ -1,103 +1,280 @@
-import React, { useState } from 'react';
-import './cadastro.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import BtnSlide from '../../Components/btn-slide/btn-slide'
-
-//imgs
-import Seta from "../../img/seta.png";
+import React, { useState } from "react";
+import fakeApi from "./api";
+import { Link } from "react-router-dom";
 import Logo from '../../img/logo.png';
-import {Link} from "react-router-dom";
+import BtnSlide from '../../Components/btn-slide/btn-slide';
+import imgBtn from "../../img/seta.png";
+import './cadastro.css';
 
+const steps = [
+    {
+        id: "LOGIN",
+        title: "Dados para logar"
+    },
+    {
+        id: "PESSOAL",
+        title: "Dados Pessoais"
+    },
+    {
+        id: "ENDERECO",
+        title: "Dados de Endereço"
+    }
+];
 
-import Cadastro_01 from '../../Components/etapa_cadastro/cadastro_01';
-import Cadastro_02 from '../../Components/etapa_cadastro/cadastro_02';
-import Cadastro_03 from '../../Components/etapa_cadastro/cadastro_03';
-import Cadastro_04 from '../../Components/etapa_cadastro/cadastro_04';
+export default function Cadastro() {
 
+    const [currentStep, setCurrentStep] = useState(0);
+    const [loading, setLoading] = useState(false);
+    const [valor , setValor] = useState([]);
+    const [formValues, setFormValues] = useState({
 
+        nome: "",
+        email: "",
+        senha: "",
+        telefone: "",
+        cpf: "",
+        data_nascimento: "",
+        cep: "",
+        endereco: "",
+        num_logradouro: "",
+        logradouro: "",
+        complemento: ""
 
-function Cadastro() {
+    });
 
-    const [estado, setEstado] = useState(0);
+      
+      
 
-    const alterar = () => {
-        setEstado(estado + 1);
+    const cadastrar = () => {
+
+        fetch("http://localhost:8080/cadastraruser", {
+
+            method: "post",
+            body: JSON.stringify(formValues),
+            headers: {
+                "Content-type": "application/json",
+                Accept: "application/json",
+            },
+        })
+            .then((retorno) => retorno.json())
+            .then((retorno_convertido) => {
+                if (retorno_convertido.mensagem !== undefined) {
+                    alert(retorno_convertido.mensagem);
+                } else {
+
+                    setFormValues([...valor, retorno_convertido]);
+                    alert("Cadatro realizado com sucesso ");
+                    window.location.href="/Login";
+
+                }
+            });
     }
 
-    //objeto cadastro
 
-    const cadastro = {
-
-        id_usuario: 0,
-        nome: '',
-        email: '',
-        senha: '',
-        telefone: '',
-        cpf: '',
-        data_nascimento: '',
-        cep: '',
-        endereco: '',
-        num_logradouro: '',
-        complemento: ''
-
+    function handleNext() {
+        setCurrentStep((prevState) => prevState + 1);
     }
 
+    function handleInputChange(event) {
+        const { name, value } = event.target;
 
-
-    const [btnCad, setBtnCad] = useState(true);
-    const [Cadastro, setCadastro] = useState([]);
-
-    const [objcadastro, setObjcadastro] = useState(cadastro);
-
-
-    //obtendo os dados do form
-
-    const digitando = (e) => {
-         setCadastro({ ...objcadastro, [e.target.name]: e.target.value });
-        
-
+        setFormValues((prevState) => ({
+            ...prevState,
+            [name]: value
+        }));
     }
 
+    async function handleSubmit(e) {
+        e.preventDefault();
 
+        console.log("Form sent...", formValues);
 
+        setLoading(true);
+
+        // simulate api
+        await fakeApi(() => setLoading(false), 2000);
+    }
 
     return (
         <div className='background'>
             <Link to={'/'}>
-            <img
-              src={Logo}
-              width="180"
-              className="d-inline-block align-right"
-              alt="Anima-se Logo"
-            />
-          </Link>
-
-            <p>{JSON.stringify(objcadastro)}</p>
+                <img
+                    src={Logo}
+                    width="180"
+                    className="d-inline-block align-right"
+                    alt="Anima-se Logo"
+                />
+            </Link>
             <div className='div_pai'>
-                <div className='container' >
 
+                <form className="container" onSubmit={handleSubmit}>
                     <div className='login_cadastro'>
-
-                        <BtnSlide page="cadastro"/>
-                        
+                        <BtnSlide page="cadastro" />
                     </div>
+                    <br />
+                    <center>
+                        <p className="step-guide">
+                            {currentStep + 1} de {steps.length}
+                        </p>
 
-                    <div className='box'>
+                    </center>
+                    <div className="fields-container">
 
-                        {estado === 0 ? <Cadastro_01 trocar={alterar} eveTeclado={digitando} btn={btnCad} /> : ""}
-                        {estado === 1 ? <Cadastro_02 trocar={alterar} eveTeclado={digitando} btn={btnCad} /> : ""}
-                        {estado === 2 ? <Cadastro_03 trocar={alterar} eveTeclado={digitando} btn={btnCad} /> : ""}
-                        {estado === 3 ? <Cadastro_04 trocar={alterar} eveTeclado={digitando} btn={btnCad} /> : ""}
 
+                        {steps[currentStep].id === "LOGIN" && (
+                            <div className="fields">
+                                <div className="field">
+                                    <input
+                                        type="text"
+                                        placeholder="Seu Email"
+                                        name="email"
+                                        onChange={handleInputChange}
+                                        value={formValues.email}
+                                        required
+                                    />
+                                </div>
+                                <div className="field">
+                                    <input
+                                        type="password"
+                                        placeholder="Sua Senha"
+                                        name="senha"
+                                        onChange={handleInputChange}
+                                        value={formValues.senha}
+
+                                    />
+                                </div>
+                                <div className="field">
+                                    <input
+                                        type="password"
+                                        placeholder="Confirmar Senha"
+                                        name="confSenha"
+                                        onChange={handleInputChange}
+                                    // value={formValues.confSenha}
+
+                                    />
+                                </div>
+
+
+                            </div>
+                        )}
+
+                        {steps[currentStep].id === "PESSOAL" && (
+                            <div className="fields">
+                                <div className="field">
+                                    <input
+                                        type="text"
+                                        placeholder="Nome Completo"
+                                        name="nome"
+                                        onChange={handleInputChange}
+                                        value={formValues.nome}
+                                        required
+                                    />
+                                </div>
+                                <div className="field">
+                                    <input
+                                        type="text"
+                                        placeholder="Telefone"
+                                        name="telefone"
+                                        onChange={handleInputChange}
+                                        value={formValues.telefone}
+                                        required
+                                    />
+                                </div>
+                                <div className="field">
+                                    <input
+                                        type="text"
+                                        placeholder="CPF"
+                                        name="cpf"
+                                        onChange={handleInputChange}
+                                        value={formValues.cpf}
+                                        required
+                                    />
+                                </div>
+                                <div className="field">
+                                    <input
+                                        type="date"
+                                        name="data_nascimento"
+                                        onChange={handleInputChange}
+                                        value={formValues.data_nascimento}
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        )}
+
+                        {steps[currentStep].id === "ENDERECO" && (
+                            <div className="fields">
+                                <div className="field">
+                                    <input
+                                        type="number"
+                                        placeholder="CEP"
+                                        name="cep"
+                                        onChange={handleInputChange}
+                                        value={formValues.cep}
+                                        required
+                                    />
+                                </div>
+                                <div className="field">
+                                    <input
+                                        type="text"
+                                        placeholder="Endereço"
+                                        name="logradouro"
+                                        onChange={handleInputChange}
+                                        value={formValues.logradouro}
+                                        required
+                                    />
+                                </div>
+                                <div className="field">
+                                    <input
+                                        type="text"
+                                        placeholder="Número"
+                                        name="num_logradouro"
+                                        onChange={handleInputChange}
+                                        value={formValues.num_logradouro}
+                                        required
+                                    />
+                                </div>
+                                <div className="field">
+                                    <input
+                                        type="text"
+                                        placeholder="Complemento"
+                                        name="complemento"
+                                        onChange={handleInputChange}
+                                        value={formValues.complemento}
+                                        required
+                                    />
+                                </div>
+                                <div className='termo'>
+                                    <input
+                                        type="checkbox"
+                                        name="termo"
+                                        onChange={handleInputChange}
+                                        required
+                                        id="checktermo"
+                                    />
+                                    <a href="https://drive.google.com/file/d/1RcRpjUfn7Elwfr96cuZlLnIbazmbc90P/view?usp=sharing" id='termo'>
+                                        Termo de responsabilidade
+                                    </a>
+                                </div>
+                            </div>
+                        )}
+
+                        {currentStep < steps.length - 1 && (
+                            <button className="box_btn" type="button" onClick={handleNext}>
+                                <img className='imagemseta' src={imgBtn} alt="botao proximo" />
+                            </button>
+                        )}
+
+                        {currentStep === steps.length - 1 && (
+                            
+                            <button className="box_btn" type="submit" onClick={cadastrar}>
+                                <img className='imagemseta' src={imgBtn} alt="botao proximo" />
+                            </button>
+
+                        )}
                     </div>
-
-                    <div>
-
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     );
 }
-
-export default Cadastro;
