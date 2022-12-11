@@ -27,7 +27,7 @@ function Home() {
                     <div className='esquerdo col-md-6 col-sm-6'>
                         <div className='informacoes mx-auto'>
                             <h1 id='slogan'>TODA VIDA<br /> MERECE VIVER<br /><span>DE UMA<br />MANEIRA DIGNA</span></h1>
-                            <BtnComecar txtBtn="Começar"/>
+                            <BtnComecar txtBtn="Começar" />
                         </div>
                         <div className='divGato'>
                             <img src={Gato} className="img-fluid me-auto" id="gato" alt="Foto de um gato" />
@@ -80,50 +80,37 @@ function Home() {
 
                 <div className="linha2">
                     <div className='esquerdo4'>
-                        <h2>Produtos</h2>
-                        <p>Temos parcerias com alguns comércios para seu animal, sendo assim, você tem a chance de adotar e ainda continuar na nossa plataforma comprando os itens certos para o seu pet.</p>
-                        <Link to={"/Marketplace"}>
-                            <BotaoHome texto="Loja" cor="verde" />
+                        <h2>Aprendizagem</h2>
+                        <p>Se você quer saber mais de como cuidar de uma forma <br /> melhor do seu animal, você pode adiquirir mais <br /> conhecimento também na nossa plataforma.</p>
+
+                        <Link to={"/Aprendizagem"}>
+                            <BotaoHome texto="Aprender" cor="verde" />
                         </Link>
 
                     </div>
                     <div className='direito4'>
-                        <img src={Tartaruga} className="img-fluid m-auto" id="tartaruga" alt="" />
+                        <img src={Cachorro4} className="img-fluid m-auto" id="cachorro4" alt="" />
                     </div>
                 </div>
 
                 <div className="linha3">
                     <div className='esquerdo5'>
-                        <img src={Cachorro4} className="img-fluid m-auto" id="cachorro4" alt="" />
+                        <img src={Hamster} className="img-fluid m-auto" id="hamster" alt="" />
                     </div>
                     <div className='direito5'>
-                        <h2>Aprendizagem</h2>
-                        <p>Se você quer saber mais de como cuidar de uma forma <br /> melhor do seu animal, você pode adiquirir mais <br /> conhecimento também na nossa plataforma.</p>
-
-                        <Link to={"/Aprendizagem"}>
-                            <BotaoHome texto="Aprender" cor="roxo" />
-                        </Link>
-
-                    </div>
-                </div>
-
-                <div className="linha4">
-                    <div className='esquerdo6'>
                         <h2>Ferramentas</h2>
                         <p>Também temos ferramentas como  uma calculadora de gastos para controlar o seu orçamento com o pet, e também uma página para localizar locais como veterinários, pet shops e ong’s próximos a você.</p>
                         <div className="linhabtn">
                             <Link to={"/Calculadora"}>
-                                <BotaoHome texto="Calculadora" cor="verde" />
+                                <BotaoHome texto="Calculadora" cor="roxo" />
                             </Link>
 
                             <Link to={"/Localizacao"}>
-                                <BotaoHome texto="Localize" cor="verde" />
+                                <BotaoHome texto="Localize" cor="roxo" />
                             </Link>
 
                         </div>
-                    </div>
-                    <div className='direito6'>
-                        <img src={Hamster} className="img-fluid m-auto" id="hamster" alt="" />
+
                     </div>
                 </div>
             </section>

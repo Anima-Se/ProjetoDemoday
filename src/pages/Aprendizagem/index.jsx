@@ -28,7 +28,7 @@ function Aprendizagem(){
             <section className="aprender">
                 <div className="topo">
                     <div className="lado1">
-                        <Bolaaprender/>
+                        <Bolaaprender />
                     </div>
                     <div className="lado2">
                         <img src={Computador} className="img-fluid" alt="" />

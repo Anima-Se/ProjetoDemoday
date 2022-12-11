@@ -19,7 +19,7 @@
 
 .PerfilConteudo {
   height: 110vh;
-  width: 100vw;
+  width: auto;
   background: url(../../img/perfil-background.png) cover;
 }
 

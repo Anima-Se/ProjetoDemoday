@@ -298,9 +298,9 @@ function CadastroPet() {
           </div>
         </section>
       </section>
-      <div className="tabela">
+      {/* <div className="tabela">
         <Tabela vetor={pets} selecionar={selecionarPet} />
-      </div>
+      </div> */}
     </>
   );
 }
