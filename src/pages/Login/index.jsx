@@ -13,11 +13,11 @@ import axios from 'axios';
 
 function Login() {
 
-    let navigate = useNavigate();
+    
     const objLogin = {
 
         email: '',
-        senha : ''
+        senha : ''  
 
     }
 
@@ -33,12 +33,16 @@ function Login() {
 
 
     const logar = () => {
-        if(data.email === "animase@gmail.com" && data.senha === 1234){
-            console.log(data);
-            alert('Usuario logado');
-            window.location.href="/perfil";
+        
+        if(data.email === "animase@gmail.com" && data.senha === "animase"){
+            window.location.href="/"
+        }else{
+        alert("Ops, o login nao existe :(  ");
         }
+    
+
     }
+
 
 
     
@@ -104,6 +108,7 @@ function Login() {
                             fundo="Seu Email"
                             name={'email'}
                             tipo="email"
+    
                             funcao={aoDigitar}
                             value={data.email}
 
@@ -116,6 +121,7 @@ function Login() {
                                 fundo="Sua Senha"
                                 name={'senha'}
                                 tipo="password"
+    
                                 funcao={aoDigitar}
                                 value={data.senha}
 
@@ -124,7 +130,7 @@ function Login() {
 
 
                         <div className='divImg'>
-                            <input type="submit" value="Entrar" onClick={logar} />
+                            <input type="button" value="Entrar" onClick={logar} />
                         </div>
                     </form>
                     <div className="linha-div">
